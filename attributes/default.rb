@@ -8,6 +8,22 @@ default['packer']['zipfile'] = "packer_#{node['packer']['version']}_" \
 # rubocop:disable Metrics/LineLength
 # Transform raw output of the checksum list into a Hash[filename, checksum].
 # https://releases.hashicorp.com/packer/${VERSION}/packer_${VERSION}_SHA256SUMS
+default['packer']['raw_checksums']['1.0.1'] = <<-EOF
+81e349748dd87457ed6fa333e8e8f29a5905125a70aaf707e4efe7fce6b3be17  packer_1.0.1_darwin_386.zip
+ee631e85f1ed77f1b52ce9bdce75cf92f952ebffba600df32892e95a78cc5133  packer_1.0.1_darwin_amd64.zip
+b2c1479e6f97153ed94947c4ef5feea44ebfa26e1164b7f058ee8754d8fa1286  packer_1.0.1_freebsd_386.zip
+e4056d823387e0d9189085b4730854981fbdef3c15bd8e7d12f5110c91940e8a  packer_1.0.1_freebsd_amd64.zip
+805e2ef6eb63b138d721d4f78c284bde4a63cd6bd2887701c9e7a031e1f38f97  packer_1.0.1_freebsd_arm.zip
+ed03336311fa62473cb3d8e95e4995734d53a290557104f86a6a2f0d86ea9cc7  packer_1.0.1_linux_386.zip
+b6e126a63a4a2bbe82f9d6bdd48ae879c4f4ffa256b2e1f9567887c321929641  packer_1.0.1_linux_amd64.zip
+d30b2651a8b7b2acc9d954717a0a00c2951cedc4e982e53d2f8a1d857f57170c  packer_1.0.1_linux_arm.zip
+e66a097e96edfa67635e65fdd75307fe8a870b985d31594cd885a62e2c10fb81  packer_1.0.1_linux_arm64.zip
+172e7cbe0dc48811913deaa00a99f8a701bf25564af0707c544d90789e638fb0  packer_1.0.1_openbsd_386.zip
+ac3f5afba667e7527d1d0dc491bbc2ad02c580ad71092e054590b826db5aab81  packer_1.0.1_openbsd_amd64.zip
+ce2ebd0fe989c2899fb2cc57f8e2f9d01fd03b29684a8d9aad7a5800ad5d679a  packer_1.0.1_windows_386.zip
+311b0414ca03bd98bad4cd58b070fece08f16be75cd0ddc8f12fedfe21626afc  packer_1.0.1_windows_amd64.zip
+EOF
+
 default['packer']['raw_checksums']['1.0.0'] = <<-EOF
 1004119cabe080a8795967659cbf321cb7bee1273f3af6168c7c058bc23e37dc  packer_1.0.0_darwin_386.zip
 274f2e45db0e6f6f6673a1c1481afc8c6f402217d984af0ca2956c3488f1ead1  packer_1.0.0_darwin_amd64.zip
